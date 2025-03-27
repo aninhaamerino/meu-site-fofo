@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Meu Amor 💖</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6f2;
+            padding: 20px;
+        }
+        #pergunta, #mensagemFinal {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #ff4d94;
+            color: white;
+            padding: 10px;
+            border: none;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #e60073;
+        }
+    </style>
+</head>
+<body>
+    <h1>Para Meu Namorado Fofo 💕</h1>
+    <div id="quiz">
+        <p id="pergunta">Você sabe o quanto eu te amo? 😘</p>
+        <button onclick="responder(true)">Muito!</button>
+        <button onclick="responder(false)">Demais!!!</button>
+    </div>
+    
+    <div id="mensagemFinal" style="display: none;"></div>
+
+    <script>
+        function responder(resposta) {
+            document.getElementById('quiz').style.display = 'none';
+            let mensagem = "Independentemente da resposta, você é a melhor pessoa do mundo! 💖";
+            mensagem += "\nEu sei que você tem uma competição importante vindo aí, e quero que saiba que estou sempre torcendo por você. 🏆💪";
+            mensagem += "\nVocê é incrível, forte e talentoso. Não importa o que aconteça, eu sempre vou estar do seu lado! Te amo! 💕";
+            document.getElementById('mensagemFinal').innerText = mensagem;
+            document.getElementById('mensagemFinal').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
